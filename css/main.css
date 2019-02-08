@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: url(../img/heroImage.jpg) no-repeat center top / cover;
+  height: 600px
+}
+
+/* do not count padding*/
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 20px 0 20px 0;
+  float: left;
+  display: block;
+  margin-right: 100px;
+}
+
+.menu a {
+  color: green;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.top_title {
+  font-size: 40px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+}
