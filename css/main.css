@@ -1,12 +1,16 @@
 body {
   font-family: Arial, sans-serif;
   padding: 0;
-  margin: 0px;
+  margin: 0;
 }
 
 header {
   background: url(../img/heroImage.jpg) no-repeat center top / cover;
-  height: 600px
+  height: 600px;
+  width: 100%;
+  max-width: 1920px;
+  min-height: 700px;
+  margin: 0 auto;
 }
 
 /* do not count padding*/
@@ -14,8 +18,18 @@ div {
   box-sizing: border-box;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -51,4 +65,139 @@ nav ul {
   color: #fff;
   text-transform: uppercase;
   text-align: left;
+  margin-top: 40px;
+}
+
+.second_title {
+  font-family: Lobster;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 20;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 20px;
+}
+
+h2 {
+  margin: 20px 0 20px 0;
+}
+
+.col-md-12 {
+  padding-bottom: 10px;
+}
+
+.col-md-4 {
+  text-align: center;
+  padding: 0;
+}
+
+.frame {
+  width: inherit;
+  border: 3px solid green;
+}
+
+.frame:hover {
+  box-shadow: 0 0 50px green;
+}
+
+.frame a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+img {
+  width: inherit;
+  height: 350px;
+  min-height: 350px;
+  border-bottom: 3px solid green;
+  object-fit: cover;
+}
+
+.product_name {
+  font-family: Lobster;
+  font-size: 35px;
+  color: blacks;
+  position: relative;
+  width: 100;
+  background-color: rgba(0,255, 0, 0.4);
+  z-index: 1;
+}
+
+.frame_menu {
+  width: inherit;
+  padding: 7px;
+}
+
+.package_options {
+  width: 100%;
+  margin: 10px 20px 10px 20px;
+}
+
+.frame_menu .country_price ul {
+  padding: 10px 0 0 0;
+  margin: 0;
+  display: block;
+  list-style-type: none;
+  justify-content: center;
+  width: inherit;
+}
+
+.frame_menu .country_price li {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+#apple_country {
+  padding: 10px 0 10px 0;
+}
+
+.frame_menu .more_qnty ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style-type: none;
+  justify-content: center;
+  padding-inline-start:0px;
+}
+
+.frame_menu .more_qnty li {
+  display: block;
+}
+
+#qnty_number {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+#qnty_number li{
+  float: left;
+  display: block;
+  margin-right: 5px;
+}
+
+.frame_menu .apple_more_info {
+  background-color: green;
+  padding: 10px 0 10px 0;
+  margin: 10px 20px 10px 20px;
+}
+
+.apple_more_info a {
+  color: white;
+}
+
+.frame_menu .button {
+  width: 100%;
+  border: 1px solid green;
+  margin: 15px 20px 15px 20px;
+  padding: 10px 0 10px 0;
+}
+
+.qnty {
+  text-transform: uppercase;
 }
