@@ -1,3 +1,59 @@
+@media screen and (max-width: 770px) {
+  ul.menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 771px) {
+  .sidenav_button {
+    display: none;
+  }
+}
+
+/* sidenav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(27, 40, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: green;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav_button {
+  font-size: 30px;
+  cursor: pointer;
+  color: green;
+  margin-top: 25px;
+}
+
+/*  sidenav */
+
 body {
   font-family: Arial, sans-serif;
   padding: 0;
@@ -43,22 +99,26 @@ p {
 nav ul {
   padding: 0;
   margin: 0;
-  display: block;
   list-style-type: none;
 }
 
 .menu li {
-  margin: 20px 0 20px 0;
   float: left;
-  display: block;
-  margin-right: 50px;
 }
 
 .menu a {
+  text-align: center;
+  display: block;
   color: green;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 20px 50px 20px 0;
   padding: 10px 15px 10px 15px;
+  font-size: 17px;
+}
+
+.menu .nav_right {
+  float: right;
 }
 
 .menu li a:hover {
@@ -90,13 +150,13 @@ h2 {
   text-transform: uppercase;
 }
 
-.col-md-12 {
-  padding-bottom: 30px;
-}
-
-.col-md-4 {
+.col-lg-4 {
   text-align: center;
   padding: 0;
+}
+
+.col-lg-12 {
+  padding-bottom: 30px;
 }
 
 .frame {
@@ -104,7 +164,8 @@ h2 {
   border: 3px solid green;
 }
 
-.frame:hover {
+.frame:hover, footer input[type=submit]:hover,
+.frame .btn_add_item:hover, .frame .more_info:hover {
   box-shadow: 0 0 50px green;
 }
 
@@ -129,7 +190,6 @@ h2 {
   position: relative;
   width: 100;
   background-color: rgba(0,255, 0, 0.4);
-  z-index: 1;
 }
 
 .frame_menu {
@@ -195,14 +255,19 @@ h2 {
 }
 
 .more_info a {
+  padding: 13px 31px 14px 31px;
   color: white;
 }
 
-.frame_menu .button {
+.frame_menu .btn_add_item {
   width: 100%;
-  border: 1px solid green;
   margin: 15px 20px 15px 20px;
   padding: 10px 0 10px 0;
+  border: 1px solid green;
+}
+
+.btn_add_item a {
+  padding: 10px 60px 10px 60px;
 }
 
 .qnty {
@@ -215,7 +280,7 @@ footer {
   padding: 0;
 }
 
-footer .col-md-4 {
+footer .col-lg-4 {
   text-align: center;
 }
 
@@ -225,17 +290,20 @@ footer h2 {
   color: white;
   margin: 0;
   padding-top: 20px;
+  margin-bottom: 20px;
 }
 
 footer p {
   font-size: 20px;
   color: white;
+  margin-bottom: 10px;
 }
 
 .social_links {
   display: flex;
   list-style-type: none;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .social_links li {
@@ -243,4 +311,27 @@ footer p {
   float: left;
   text-decoration: none;
   margin-right: 20px;
+}
+
+.social_links li:last-child {
+  margin-right: 0;
+}
+
+footer .col-sm-4, .col-sm-6, .col-sm-2 {
+  text-align: center;
+}
+
+footer input[type=text], input[type=email],
+textarea, input[type=submit] {
+  margin: 0;
+  padding: 3px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+footer input[type=submit] {
+  color: white;
+  background-color: green;
+  border: 1px solid green;
+  padding: 5px;
 }
