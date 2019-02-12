@@ -12,33 +12,39 @@
 </head>
 <body>
 
+
+<div class="navigation clearfix">
+  <div class="container">
+  <!-- Main navigation bar -->
+  <nav>
+    <ul class="menu">
+      <li>
+        <a href="#">Home</a>
+      </li>
+      <li>
+        <a href="#">Catalog</a>
+      </li>
+      <li>
+        <a href="#">About Us</a>
+      </li>
+      <li class="nav_right">
+        <a style="margin-right: 0;" href="#">Basket</a>
+      </li>
+      <li class="nav_right">
+        <a href="#">Sign In</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</div>
+
   <header>
 
     <div class="container">
-      <div class="heading clearfix">
 
-        <nav>
-          <ul class="menu">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Catalog</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li class="nav_right">
-              <a style="margin-right: 0;" href="#">Basket</a>
-            </li>
-            <li class="nav_right">
-              <a href="#">Sign In</a>
-            </li>
-          </ul>
-        </nav>
 
-      </div>
-
+      <!-- Side navigation, which is appeared when the size of screen
+      is less then 771px -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
@@ -47,13 +53,14 @@
         <a href="#">Sign In</a>
         <a href="#">Basket</a>
       </div>
-
+      <!-- Button to open side nav -->
       <div class="sidenav_button">
 
         <span onclick="openNav()">&#9776;</span>
 
       </div>
 
+      <!-- Home page titles -->
       <div class="titles">
         <div class="top_title">
           Fresh Fruits<br>
@@ -68,12 +75,11 @@
     </div>
   </header>
 
+  <!-- First section of Europe products -->
   <section>
     <div class="container">
 
       <h2>Europe Most Popular</h2>
-
-
 
       <div class="row">
         <!-- First Product Frame-->
@@ -90,7 +96,7 @@
                     <option value="2">2kg bag</option>
                     <option value="3">3kg bag</option>
                   </select>
-
+                  <!-- Information about fruit country and fruit price -->
                   <div class="col-6">
                     <ul class="country_price">
                       <li class="country_name" id="apple_country">Poland</li>
@@ -98,11 +104,11 @@
                     </ul>
                   </div>
                   <div class="col-6">
-
+                    <!-- Link to page about one fruit and quantity chooser -->
                     <ul class="more_qnty">
                       <li>
                         <div class="more_info">
-                          <a href="">More</a>
+                          <a href="#">More</a>
                         </div>
                       </li>
                       <li>
@@ -122,7 +128,7 @@
                         </ul>
                       </li>
                     </ul>
-
+                    <!-- Add item to the basket -->
                   </div>
                   <div class="button btn_add_item">
                     <a href="#">Add to Basket</a>
@@ -219,7 +225,7 @@
                     <ul class="more_qnty">
                       <li>
                         <div class="more_info">
-                          <a href="">More</a>
+                          <a href="#">More</a>
                         </div>
                       </li>
                       <li>
@@ -287,7 +293,7 @@
                     <ul class="more_qnty">
                       <li>
                         <div class="more_info">
-                          <a href="">More</a>
+                          <a href="#">More</a>
                         </div>
                       </li>
                       <li>
@@ -344,7 +350,7 @@
                     <ul class="more_qnty">
                       <li>
                         <div class="more_info">
-                          <a href="">More</a>
+                          <a href="#">More</a>
                         </div>
                       </li>
                       <li>
@@ -621,6 +627,7 @@
     </div>
   </section>
 
+  <!-- Page footer -->
   <footer>
     <div class="container">
 
@@ -636,18 +643,19 @@
           </ul>
 
         </div>
-        <div class="col-lg-8">
+        <div class="col--8">
+          <!-- Contact us form -->
           <form action="#">
             <div class="row align-items-center">
-              <div class="col-sm-4">
+              <div class="col-md-4">
                 <input type="text" name="fname" placeholder="First Name">
                 <input type="text" name="lname" placeholder="Last Name">
                 <input type="email" name="emailaddress" placeholder="Email">
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <textarea rows="5" cols="1" type="text" name="message" placeholder="Your message..."></textarea>
               </div>
-              <div class="col-sm-2">
+              <div class="col-md-2">
                 <input type="submit" value="Submit">
               </div>
             </div>
@@ -658,12 +666,12 @@
     </div>
   </footer>
 
-
   <script>
+  // function to open the side navigation
   function openNav() {
     document.getElementById("mySidenav").style.width = "200px";
   }
-
+  //function to close side navigation
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
