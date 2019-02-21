@@ -20,16 +20,16 @@
       <nav>
         <ul class="menu">
           <li>
-            <a href="#">Home</a>
+            <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="#">Catalog</a>
+            <a href="pages/catalog.html">Catalog</a>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <a href="pages/aboutUs.html">About Us</a>
           </li>
           <li class="nav_right">
-            <a style="margin-right: 0;" href="#">Basket</a>
+            <a style="margin-right: 0;" href="pages/basket.html">Basket</a>
           </li>
           <li class="nav_right">
             <button id="signin" onclick="openForm()">Sign In</button>
@@ -43,11 +43,11 @@
   is less then 771px -->
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#">Catalog</a>
-    <a href="#">About Us</a>
+    <a href="index.html">Home</a>
+    <a href="pages/catalog.html">Catalog</a>
+    <a href="pages/aboutUs.html">About Us</a>
     <button id="mobSignIn" onclick="openForm()">Sign In</button>
-    <a href="#">Basket</a>
+    <a href="pages/basket.html">Basket</a>
   </div>
 
   <!-- End of mobile navigation bar -->
@@ -68,11 +68,11 @@
             <a id="forgot_password" href="#">Forgot Password?</a>
           </li>
           <li>
-            <a id="create_account" href="create_account.html">Create Account</a>
+            <a id="create_account" href="pages/create_account.html">Create Account</a>
           </li>
         </ul>
 
-        <button type="submit" class="btn login">Login</button>
+        <button type="submit" class="btn login" onclick="openAccount()">Login</button>
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
 
       </form>
@@ -83,7 +83,7 @@
   <header>
 
     <div class="container">
-      
+
       <!-- Button to open side nav -->
       <div class="sidenav_button">
         <span onclick="openNav()">&#9776;</span>
@@ -695,7 +695,13 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    function openAccount() {
+      window.open("pages/account.html");
+    }
+  </script>
 
 </body>
 </html>

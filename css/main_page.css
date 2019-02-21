@@ -20,6 +20,10 @@ header {
   margin: 0 auto;
 }
 
+.container h2 {
+  text-align: center;
+}
+
 /* Fix of clearfix - clear the floats */
 .clearfix:after {
   content: '';
@@ -262,4 +266,13 @@ footer input[type=submit] {
   background-color: green;
   border: 1px solid green;
   padding: 5px;
+}
+
+@media screen and (max-width: 535px) {
+  .top_title {
+    font-size: 30px;
+  }
+  .second_title {
+    font-size: 20px;
+  }
 }
