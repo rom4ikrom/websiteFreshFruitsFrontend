@@ -8,6 +8,8 @@
   href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
   integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main_page.css">
+  <link rel="stylesheet" href="css/nav.css">
   <title>Fresh Fruits</title>
 </head>
 <body>
@@ -37,6 +39,19 @@
     </div>
   </div>
 
+  <!-- Side navigation, which is appeared when the size of screen
+  is less then 771px -->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">Catalog</a>
+    <a href="#">About Us</a>
+    <button id="mobSignIn" onclick="openForm()">Sign In</button>
+    <a href="#">Basket</a>
+  </div>
+
+  <!-- End of mobile navigation bar -->
+
   <!-- Pop up login box -->
   <div id="background-container">
     <div class="login_form_popup" id="loginForm">
@@ -53,7 +68,7 @@
             <a id="forgot_password" href="#">Forgot Password?</a>
           </li>
           <li>
-            <a id="create_account" href="#">Create Account</a>
+            <a id="create_account" href="create_account.html">Create Account</a>
           </li>
         </ul>
 
@@ -68,23 +83,11 @@
   <header>
 
     <div class="container">
-
-
-      <!-- Side navigation, which is appeared when the size of screen
-      is less then 771px -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Home</a>
-        <a href="#">Catalog</a>
-        <a href="#">About Us</a>
-        <button id="mobSignIn" onclick="openForm()">Sign In</button>
-        <a href="#">Basket</a>
-      </div>
+      
       <!-- Button to open side nav -->
       <div class="sidenav_button">
         <span onclick="openNav()">&#9776;</span>
       </div>
-      <!-- End of mobile navigation bar -->
 
       <!-- Home page titles -->
       <div class="titles">
@@ -93,9 +96,9 @@
           From Around the World
         </div>
         <div class="second_title">
-          EXPLORE OUT COLLECTIONS
-          OF FRUITS FROM EUROPE, <br>
-          ASIA AND SOUTH AMERICA
+          Explore our collections
+          of fruits from europe, <br>
+          asia and south america
         </div>
       </div>
     </div>
@@ -692,26 +695,7 @@
     </div>
   </footer>
 
-  <script>
-  // function to open the side navigation
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "200px";
-  }
-  //function to close side navigation
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
-
-  // open popup login box
-  function openForm() {
-    document.getElementById("background-container").style.display = "block";
-  }
-
-  function closeForm() {
-    document.getElementById("background-container").style.display = "none";
-  }
-
-  </script>
+  <script src="main.js"></script>
 
 </body>
 </html>
