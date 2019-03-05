@@ -16,92 +16,29 @@
 </head>
 <body>
 
-  <div class="navigation clearfix">
-    <div class="container">
-      <!-- Main navigation bar -->
-      <nav>
-        <ul class="menu">
-          <li>
-            <a href="../index.html">Home</a>
-          </li>
-          <li>
-            <a href="catalog.html">Catalog</a>
-          </li>
-          <li>
-            <a href="aboutUs.html">About Us</a>
-          </li>
-          <li class="nav_right">
-            <a style="margin-right: 0;" href="basket.html">Basket</a>
-          </li>
-          <li class="nav_right">
-            <button id="signin" onclick="openForm()">Sign In</button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
+  <div class="wrapper">
+    <div id="navigation"></div>
 
-  <!-- Pop up login box -->
-  <div id="background-container">
-    <div class="login_form_popup" id="loginForm">
-      <form class="form-container" action="#">
-        <h2>Login</h2>
+    <div id="loginBox"></div>
 
-        <label for="email">Email</label>
-        <input type="email" placeholder="Enter email" name="email" required>
-        <label for="password">Password</label>
-        <input type="password" placeholder="Enter password" name="password" required>
+    <header>
+      <div class="container">
 
-        <ul>
-          <li>
-            <a id="forgot_password" href="#">Forgot Password?</a>
-          </li>
-          <li>
-            <a id="create_account" href="create_account.html">Create Account</a>
-          </li>
-        </ul>
+        <div class="titles">
+          Basket
+        </div>
 
-        <button type="submit" class="btn login">Login</button>
-        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
-      </form>
-
-    </div>
-  </div>
-
-  <!-- Side navigation, which is appeared when the size of screen
-  is less then 771px -->
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="../index.html">Home</a>
-    <a href="catalog.html">Catalog</a>
-    <a href="aboutUs.html">About Us</a>
-    <button id="mobSignIn" onclick="openForm()">Sign In</button>
-    <a href="basket.html">Basket</a>
-  </div>
-
-  <header>
-    <div class="container">
-
-      <!-- Button to open side nav -->
-      <div class="sidenav_button">
-        <span onclick="openNav()">&#9776;</span>
       </div>
+    </header>
 
-      <div class="title">
-        Basket
-      </div>
+    <section>
 
-    </div>
-  </header>
+    </section>
 
-  <section>
+    <div id="footer"></div>
+  </div>
 
-  </section>
-
-  <footer>
-
-  </footer>
+  <script src="../js/jquery.js"></script>
 
   <script src="../js/main.js"></script>
 

@@ -8,11 +8,6 @@
 /* Header */
 header {
   background: url(../img/heroImage.jpg) no-repeat center top / cover;
-  height: 500px;
-  width: 100%;
-  max-width: 1920px;
-  min-height: 400px;
-  margin: 0 auto;
 }
 
 .container {
@@ -35,10 +30,6 @@ header {
 /* Design of the titles */
 .top_title {
   font-size: 40px;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: left;
-  padding-top: 40px;
 }
 
 .second_title {
@@ -46,9 +37,6 @@ header {
   font-size: 25px;
   font-style: normal;
   font-weight: 20;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: left;
   margin-top: 20px;
 }
 

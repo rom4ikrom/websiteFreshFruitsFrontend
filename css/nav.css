@@ -1,27 +1,3 @@
-/* Media Screen Rules Queries */
-@media screen and (max-width: 991px) {
-  ul.menu {
-    display: none;
-  }
-
-  #loginForm {
-    position: absolute;
-    top: 10%;
-    margin-left: -150px;
-  }
-
-  #loginForm .form-container {
-    max-width: 300px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .sidenav_button, .sidenav {
-    display: none;
-  }
-}
-
-
 /* Side navigation */
 .sidenav {
   height: 100%;
@@ -193,4 +169,40 @@ nav ul {
 .menu li a:hover, #signin:hover {
   background-color: green;
   color: white;
+}
+
+.menu .active {
+  background-color: green;
+  color: white;
+}
+
+/* Media Screen Rules Queries */
+@media screen and (max-width: 991px) {
+  ul.menu {
+    display: none;
+  }
+
+  header {
+    margin-top: -70px;
+  }
+
+  header .titles {
+    padding-top: 100px;
+  }
+
+  #loginForm {
+    position: absolute;
+    top: 10%;
+    margin-left: -150px;
+  }
+
+  #loginForm .form-container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sidenav_button, .sidenav {
+    display: none;
+  }
 }

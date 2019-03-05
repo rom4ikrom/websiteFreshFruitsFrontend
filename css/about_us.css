@@ -1,14 +1,9 @@
 /* Header */
 header {
   background: url(../img/aboutUsHeroImage3.jpg) no-repeat center top / cover;
-  height: 500px;
-  width: 100%;
-  max-width: 1920px;
-  min-height: 400px;
-  margin: 0 auto;
 }
 
-.title {
+.titles {
   font-size: 40px;
   color: #fff;
   text-transform: uppercase;
@@ -119,48 +114,6 @@ h2 {
 
 .contacts {
   margin-bottom: 20px;
-}
-
-/* Footer Design */
-footer {
-  background-color: black;
-  margin: 0;
-  padding: 0;
-}
-
-footer .col-md-12 {
-  text-align: center;
-}
-
-/* social links title */
-footer p {
-  font-size: 20px;
-  color: white;
-  margin-bottom: 10px;
-  padding-top: 15px;
-}
-
-.social_links {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
-  margin-bottom: 30px;
-}
-
-.social_links li {
-  display: block;
-  float: left;
-  text-decoration: none;
-  margin-right: 20px;
-}
-
-/* hover animation */
-.social_links li:hover {
-  opacity: 0.6;
-}
-
-.social_links li:last-child {
-  margin-right: 0;
 }
 
 @media screen and (max-width: 410px) {
